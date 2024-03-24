@@ -7,6 +7,8 @@ import "./fonts.css"
 import './App.css';
 import coverimg from './Resources/Horizontal-Tagline-V2.png'
 function App() {
+  const targetDate = new Date(2024, 3, 26);
+  const targetTimestamp = targetDate.getTime();
   return (
     <>
       <section className="container">
@@ -23,7 +25,7 @@ function App() {
             <h3>Mark your calendars!</h3>
             <FlipClockCountdown
               className='flip-clock'
-              to={new Date().getTime() + 12 * 24 * 3600 * 1000}
+              to={targetTimestamp}
               labels={["DAYS", "HOURS", "MINUTES", "SECONDS"]}
               duration={0.5}
             />
