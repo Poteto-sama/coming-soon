@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'DairaFont';
+    src: url('./fonts/HarabaraMaisBold.otf') format('opentype');
+    /* You can specify different font weights and styles if applicable */
+    /* font-weight: normal; */
+    /* font-style: normal; */
+}

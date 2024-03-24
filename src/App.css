@@ -1,0 +1,223 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  padding: 0px 20px;
+}
+
+.content_wrapper {
+  height: 50%;
+}
+
+.coverimg {
+  height: 50%;
+}
+
+.cover {
+  margin-top: 18%;
+  width: 95%;
+  height: 75%;
+}
+
+.clock_content {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.clock_content h1 {
+  color: var(--white-color);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.clock_content h3 {
+  color: var(--primary-color);
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+/* styles.css */
+
+.flip-clock {
+  --fcc-flip-duration: 0.5s;
+  /* transition duration when flip card */
+  --fcc-digit-block-width: 40px;
+  /* width of digit card */
+  --fcc-digit-block-height: 60px;
+  /* height of digit card, highly recommend in even number */
+  --fcc-digit-font-size: 50px;
+  /* font size of digit */
+  --fcc-label-font-size: 10px;
+  /* font size of label */
+  --fcc-background: black;
+  /* background of digit card */
+  --fcc-divider-color: rgb(255, 255, 255);
+  /* color of divider */
+  --fcc-divider-height: 0px;
+  /* height of divider */
+  --fcc-separator-size: 6px;
+  /* size of colon */
+  --fcc-separator-color: red;
+  /* color of colon */
+}
+
+.button {
+  width: 140px;
+  height: 45px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black;
+  background-color: var(--white-color);
+  border: none;
+  border-radius: 45px;
+  margin-top: 1rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  transform: translate(-7px);
+  box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+
+}
+
+@media (min-width: 900px) {
+  .clock_content h1 {
+    font-size: 3rem;
+  }
+
+  .clock_content h3 {
+    font-size: 1.5rem;
+  }
+
+  .flip-clock {
+    --fcc-digit-block-width: 55px;
+    --fcc-digit-block-height: 120px;
+    /* height of digit card, highly recommend in even number */
+    --fcc-digit-font-size: 30px;
+    /* font size of digit */
+    --fcc-label-font-size: 10px;
+    /* font size of label */
+
+  }
+}
+
+@media (max-width: 420px) {
+
+  .cover {
+    margin-top: 45%;
+    width: 95%;
+    height: 55%;
+  }
+
+  .clock_content h1 {
+    font-size: 3rem;
+  }
+
+  .clock_content h3 {
+    font-size: 1.5rem;
+  }
+
+  .flip-clock {
+    --fcc-digit-block-width: 25px;
+    --fcc-digit-block-height: 120px;
+    /* height of digit card, highly recommend in even number */
+    --fcc-digit-font-size: 30px;
+    /* font size of digit */
+    --fcc-label-font-size: 10px;
+    /* font size of label */
+  }
+
+  .content_wrapper {
+    height: 60%;
+  }
+
+  .coverimg {
+    height: 40%;
+  }
+
+}
+
+@media (max-width: 280px) {
+
+  .cover {
+    margin-top: 45%;
+    width: 95%;
+    height: 55%;
+  }
+
+  .clock_content h1 {
+    font-size: 3rem;
+  }
+
+  .clock_content h3 {
+    font-size: 1.5rem;
+  }
+
+  .flip-clock {
+    --fcc-digit-block-width: 19px;
+    --fcc-digit-block-height: 120px;
+    /* height of digit card, highly recommend in even number */
+    --fcc-digit-font-size: 30px;
+    /* font size of digit */
+    --fcc-label-font-size: 10px;
+    /* font size of label */
+  }
+
+  .content_wrapper {
+    height: 60%;
+  }
+
+  .coverimg {
+    height: 40%;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .cover {
+    margin-top: 45%;
+    width: 95%;
+    height: 55%;
+  }
+
+  .clock_content h1 {
+    font-size: 3rem;
+  }
+
+  .clock_content h3 {
+    font-size: 1.5rem;
+  }
+
+  .flip-clock {
+    --fcc-digit-block-width: 19px;
+    --fcc-digit-block-height: 120px;
+    /* height of digit card, highly recommend in even number */
+    --fcc-digit-font-size: 30px;
+    /* font size of digit */
+    --fcc-label-font-size: 10px;
+    /* font size of label */
+  }
+
+  .content_wrapper {
+    height: 60%;
+  }
+
+  .coverimg {
+    height: 40%;
+  }
+
+}
